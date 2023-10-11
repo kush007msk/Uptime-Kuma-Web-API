@@ -15,10 +15,10 @@ services:
       - api:/db
     restart: always
     environment:
-      - KUMA_SERVER=${KUMA_SERVER:-http://kuma:3001}
-      - KUMA_USERNAME=${KUMA_USERNAME:-test}
-      - KUMA_PASSWORD=${KUMA_PASSWORD:-123test.}
-      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
+      - KUMA_SERVER=http://172.31.49.227:3001
+      - KUMA_USERNAME=admin
+      - KUMA_PASSWORD=admin123#
+      - ADMIN_PASSWORD=admin
       # - ACCESS_TOKEN_EXPIRATION=${ACCESS_TOKEN_EXPIRATION:-1}
       - SECRET_KEY=${SECRET_KEY:-pO8WunLtrznm2i4NfOJ25BkG4sh4kYwN1FjzZp8O6E0} #random 32bit string that's url safe.
     ports:
