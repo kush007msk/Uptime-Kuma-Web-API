@@ -1,8 +1,8 @@
-up: down
-	docker compose up --build
+up:
+	docker-compose up --build
 
 down:
-	docker compose down --remove-orphans
+	docker-compose down --remove-orphans
 
 test:
 	bash tests/monitor.sh
