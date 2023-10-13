@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh """
                    cd \${WORKSPACE} # Use \${WORKSPACE} to refer to the workspace
-                   make \${action} # Use \${action} to reference the parameter
+                   make \${action} & # Use \${action} to reference the parameter
                 """
             }
         }
